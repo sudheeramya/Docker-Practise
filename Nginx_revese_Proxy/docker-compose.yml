@@ -1,0 +1,19 @@
+version: '3'
+networks:
+    mynetwork:
+services: 
+    myapp1:
+        container_name: myapp1
+        image: king12ho/myapp
+        ports: 
+           - 80:80        
+        networks: 
+           - mynetwork
+
+    myapp2:
+        container_name: myapp2
+        image: king12ho/myapp
+        ports: 
+           - 10080:80
+        networks: 
+           - mynetwork

@@ -1,0 +1,27 @@
+Docker Installation
+
+Add the GPG key  
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+add the Docker repository from APT sources
+   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+ 
+Update the Ubuntu package database
+   sudo apt-get update
+ 
+And finally, install Docker
+   sudo apt-get install -y docker-ce
+
+Install Docker Compose on Ubuntu
+Docker Compose is used to orchestrate and run multiple containers together.
+
+     sudo curl -L "https://github.com/docker/compose/releases/download/1.27.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+Set execute permissions for Docker Compose
+    sudo chmod +x /usr/local/bin/docker-compose
+
+
+
+
+
+

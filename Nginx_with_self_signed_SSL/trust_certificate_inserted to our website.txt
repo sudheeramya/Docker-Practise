@@ -1,0 +1,7 @@
+# Configure Chrome to Trust the Certificate and to Show the Site as Secure
+# Add the certificate to the trusted CA root store
+
+
+certutil -d sql:$HOME/.pki/nssdb -A -t "P,," -n "localhost" -i localhost.crt
+
+

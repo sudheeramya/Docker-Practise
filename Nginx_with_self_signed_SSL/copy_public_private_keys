@@ -1,0 +1,7 @@
+Copy the public key to the /etc/ssl/certs directory
+
+sudo cp localhost.crt /etc/ssl/certs/localhost.crt
+Copy the private key to the /etc/ssl/private directory
+
+sudo cp localhost.key /etc/ssl/private/localhost.key
+
